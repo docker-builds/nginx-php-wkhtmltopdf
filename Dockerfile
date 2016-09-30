@@ -17,3 +17,5 @@ RUN apk add --update xvfb ttf-freefont fontconfig dbus \
   ' > /usr/bin/wkhtmltoimage && \
       chmod +x /usr/bin/wkhtmltoimage \
     && rm -rf /var/cache/apk/*
+    
+COPY files /
